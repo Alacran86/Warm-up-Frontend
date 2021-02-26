@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 
 const Posts = () => {
-    const [post, setPosts] = useState([])
+    const [posts, setPosts] = useState([])
 
     const obtenerPosts = async () =>{
     const res = await axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -19,13 +19,13 @@ const Posts = () => {
 
 
     return (
-        <div>
+        <div className="container justified-content-center">
                 <h2>Lista de posts</h2>
                 {
-                    post.map( (item) =>(
-                        <div>
-                            <Link key to={`/posts/${item.id}`}>{item.title}</Link>
-                        </div>
+                    posts.map( (item) =>(
+                        
+                            <Link key to={`/post/${item.id}`}><li>{item.title}</li></Link>
+                      
                     ) )
                 }    
         </div>
