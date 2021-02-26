@@ -19,6 +19,8 @@ const Posts = () => {
 
 
     return (
+
+        
         <div className="container justified-content-center">
                 <h2>Lista de posts</h2>
                 {

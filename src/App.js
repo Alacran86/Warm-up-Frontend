@@ -2,15 +2,13 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  Switch
-
-} from 'react-router-dom'
+ } from 'react-router-dom'
 import Posts from './components/Posts'
 import Post from './components/Post'
 import FormularioCreacion from './components/FormularioCreacion'
 import FormularioEdicion from './components/FormularioEdicion'
 import BarraNavegacion from './components/BarraNavegacion'
+
 
 
 
